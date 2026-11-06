@@ -1557,8 +1557,7 @@ document.addEventListener('click',function(e){
   var ROLL=1900,SETTLE=700,TOTAL=ROLL+SETTLE,EASE='cubic-bezier(.16,.72,.2,1)';
   function show(){box.style.visibility='visible';tread.style.visibility='visible'}
   function swapToGif(){
-    var c=navigator.connection||{},slow=c.saveData||/(^|-)(2g|3g)$/.test(c.effectiveType||'');
-    if(slow||reduce||window.innerWidth<720)return;
+    if(reduce)return;   /* people who ask for less motion keep the still logo */
     var im=new Image();im.onload=function(){img.src=im.src};im.src='images/otr.gif';
   }
   function roll(){
