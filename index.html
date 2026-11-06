@@ -270,6 +270,30 @@ input:focus-visible,select:focus-visible{outline:2px solid var(--lav);outline-of
   .kv dt{border-top:1px solid var(--line);padding-bottom:0}
   .kv dd{border-top:0;padding-top:.15rem}
   .chart iframe{height:24rem}
+
+  /* Phone: centre the short, standalone text and the cards so nothing hangs off the left with
+     empty space on the right. Forms, data tables, the numbered steps and the directory stay left. */
+  .nav{justify-content:center;margin:0}
+  .nav a{font-size:.85rem;padding:.5rem .45rem}
+  .hero-stage{justify-content:center}
+  .hero-body{text-align:center}
+  .price-line,.actions,.spec{justify-content:center}
+  .section-head{text-align:center;margin-inline:auto}
+  .section-head .intro{margin-inline:auto}
+  .otr-grid>div:first-child>h2,.earn-grid h3,.chart .sub-title,.community{text-align:center}
+  .live-note{text-align:center}
+  .vitals{text-align:center}
+  .vital,.vital+.vital{padding:1rem .5rem}
+  .vital:last-child:nth-child(odd){grid-column:1/-1}
+  .loop-step,.project{align-items:center;text-align:center}
+  .loop-step .btn,.project .btn{align-self:center}
+  .io,.project-name{justify-content:center}
+  .project ul{text-align:left}
+  .plate .row-actions{justify-content:center}
+  .foot-grid{grid-template-columns:1fr;gap:1.75rem}
+  .dir-foot{text-align:center;margin-inline:auto}
+  .foot{text-align:center}
+  .foot p{margin-inline:auto}
 }
 </style>
 </head>
@@ -284,9 +308,9 @@ input:focus-visible,select:focus-visible{outline:2px solid var(--lav);outline-of
       <a href="#otr">OTR</a>
       <a href="#earn">Earn</a>
       <a href="#fold">Fold</a>
-      <a href="#projects">Our projects</a>
+      <a href="#projects">Projects</a>
       <a href="#tools">Tools</a>
-      <a href="#directory">Link directory</a>
+      <a href="#directory">Directory</a>
     </nav>
     <a class="btn btn-pink btn-sm" href="https://ipfs.app.pulsex.com/?inputCurrency=PLS&amp;outputCurrency=0xf28956aad0eec5cd30492d29f6e98e2011c25203" target="_blank" rel="noopener noreferrer">Buy OTR</a>
   </div>
